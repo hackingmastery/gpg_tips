@@ -1,0 +1,18 @@
+
+// creating new gpg 
+
+gpg gpg --gen-key
+
+// export public key 
+
+gpg --export --armor > pub.pub 
+
+// export piravte key 
+
+gpg --export-secret-keys > private.asc
+
+// import keys 
+
+gpg --import pub.pub 
+gpg --import private.asc 
+
