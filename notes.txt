@@ -16,3 +16,10 @@ gpg --export-secret-keys > private.asc
 gpg --import pub.pub 
 gpg --import private.asc 
 
+// to encrypt  secret.txt 
+
+gpg -r user@exmple.com -e secret.txt  
+
+// to decrypt an encrypted secret.txt.gpg 
+
+gpg -d secret.txt.gpg > secret_dycrpeted.txt 
