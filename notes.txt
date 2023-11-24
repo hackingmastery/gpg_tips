@@ -22,4 +22,4 @@ gpg -r user@exmple.com -e secret.txt
 
 // to decrypt an encrypted secret.txt.gpg 
 
-gpg -d secret.txt.gpg > secret_dycrpeted.txt 
+gpg -d secret.txt.gpg > secret_dycrpted.txt 
