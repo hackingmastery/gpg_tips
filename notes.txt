@@ -25,3 +25,8 @@ gpg -r user@exmple.com -e secret.txt
 gpg -d secret.txt.gpg > secret_dycrpted.txt 
 
 gpg --list-keys  // show list keys 
+
+// signed your message 
+echo "hello" | gpg --clear-sign --local-user <key-id-or-fingerprint> // something like 'D6BA9423021A0839CCC6F3C8C61D429110B625A1'
+
+echo "hello" | gpg --clear-sign --local-user D6BA9423021A0839CCC6F3C8C61D429110B625A1
